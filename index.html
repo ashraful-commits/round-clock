@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="col-md-5">
+            <div class="clock position-relative">
+                <div class="display">
+                <h6 id="hour"></h6>
+                <h5 >:</h5>
+                <h6 id="munite"></h6>
+                <h5 >:</h5>
+                <h6 id="second"></h6>
+                <p id="am_pm"></p>
+            </div>
+                <div class="hour position-absolute">
+                    <div class="dot_hour"></div>
+                    <svg viewBox="-300 -300 1000 1000">
+                        <circle cx="200" cy="200" r="150" stroke="white" fill="transparent" stroke-width="2" class="svg_hour_one"></circle>
+                        <circle cx="200" cy="200" r="150" stroke="#FF0080" fill="transparent" stroke-width="5" class="svg_hour_two"></circle>
+                    </svg>
+                    <div class="munite position-absolute">
+                        <div class="dot_munite"></div>
+                        <svg viewBox="-300 -300 1000 1000">
+                            <circle cx="200" cy="200" r="250" stroke="white" fill="transparent" stroke-width="2" class="svg_munite_one"></circle>
+                            <circle cx="200" cy="200" r="250" stroke="#E100FF" fill="transparent" stroke-width="5" class="svg_munite_two"></circle>
+                            
+                        </svg>
+                        <div class="second position-absolute">
+                            <div class="dot_second"></div>
+                            <svg viewBox="-300 -300 1000 1000">
+                                <circle cx="200" cy="200" r="350" stroke="white" fill="transparent" stroke-width="2" class="svg_second_one"></circle>
+                                <circle cx="200" cy="200" r="350" stroke="#00F260" fill="transparent" stroke-width="5" class="svg_second_two"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
